@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #41651d;
+  background-color: #262907;
   margin: 0;
   padding-top: 60px;
   padding-bottom: 50px;
@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "WinkyRough", sans-serif;
 }
 
 a {
@@ -21,21 +22,21 @@ a {
 }
 
 nav {
+  background-color: #4f5412;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  background: #3700ff;
   z-index: 1000;
 }
 
 footer {
+  background-color: #4f5412;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
-  background: #3700ff;
   z-index: 1000;
 }

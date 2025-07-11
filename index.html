@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
     <script src="./scripts/template.js" defer></script>
     <script src="./scripts/bg.js" defer></script>
     <script src="./script.js" defer></script>
@@ -23,7 +24,7 @@
         <div class="likes_and_heart">
           <p id="likes">1234</p>
           <button id="heart-button" class="heart_button">
-            <img src="./assets/img/heart.png" alt="" />
+            <img src="./assets/img/heart_green.png" alt="" />
           </button>
         </div>
       </div>
@@ -31,7 +32,7 @@
       <div id="book-infos" class="book_infos">
         <div class="book_info_left">
           <p>Autor:</p>
-          <p>Erscheinungsjahr:</p>
+          <p>Veröffentlichung:</p>
           <p>Genre:</p>
         </div>
         <div class="book_info_right">
@@ -40,17 +41,14 @@
           <p>Roman</p>
         </div>
       </div>
-      <div id="book-commentarie-headline" class="book_commentaries_headline">
-        <p>Kommentare</p>
+      <div id="book-comment-headline" class="book_comment_headline">
+        <p>Kommentare:</p>
       </div>
-      <div id="commentaries-container" class="commentaries_container">
-        <div id="commentaries-user-names" class="commentaries_user_names"></div>
-        <div
-          id="commentaries-user-commentaries"
-          class="commentaries_user_commentaries"
-        ></div>
+      <div id="comment-container" class="comment_container">
+        <div id="comment-user-names" class="comment_user_names"></div>
+        <div id="comment-user-comment" class="comment_user_comment"></div>
       </div>
-      <div id="commentarie-input" class="commentarie_input">
+      <div id="comment-input" class="comment_input">
         <input type="text" />
         <button id="send-button" class="send_button"></button>
       </div>

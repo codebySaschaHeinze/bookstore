@@ -59,7 +59,7 @@
 }
 
 .heart_button img {
-  height: 30px;
+  height: 35px;
   width: auto;
 }
 
@@ -88,7 +88,7 @@
   justify-items: flex-end;
 }
 
-.book_commentaries_headline {
+.book_comment_headline {
   background-color: rgba(128, 255, 0, 0.349);
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@
   padding-left: 20px;
 }
 
-.commentaries_container {
+.comment_container {
   background-color: rgba(255, 248, 220, 0.591);
   display: flex;
   height: 180px;
@@ -107,19 +107,19 @@
   flex-direction: row;
 }
 
-.commentaries_user_names {
+.comment_user_names {
   background-color: rgba(0, 255, 255, 0.582);
   height: 100%;
   width: 50%;
 }
 
-.commentaries_user_commentaries {
+.comment_user_comment {
   background-color: rgba(195, 255, 0, 0.582);
   height: 100%;
   width: 50%;
 }
 
-.commentarie_input {
+.comment_input {
   background-color: rgba(255, 127, 80, 0.527);
   height: 40px;
   width: 100%;
@@ -128,12 +128,12 @@
   justify-content: space-around;
   border-radius: 15px;
 }
-.commentarie_input input {
+.comment_input input {
   height: 20px;
   width: 330px;
 }
 
-.commentarie_input button {
+.comment_input button {
   height: 20px;
   width: 25px;
 }
