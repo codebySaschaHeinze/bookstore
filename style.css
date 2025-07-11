@@ -19,7 +19,7 @@
   flex-direction: column;
   background-color: rgba(88, 71, 6, 0.534);
   height: 600px;
-  width: clamp(260px, 40vw, 700px);
+  width: clamp(260px, 60vw, 700px);
   border-radius: 12px;
 }
 
@@ -55,8 +55,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: clamp(20px, 10vw, 40px);
+  padding-right: clamp(20px, 10vw, 10px);
 }
 
 .likes_and_heart {
