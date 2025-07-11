@@ -13,12 +13,51 @@
   </head>
   <body onload="init()">
     <nav></nav>
-    <section id="content-container1"></section>
-    <section id="content-container2"></section>
+    <section id="content-container1" class="content_container">
+      <div id="book-title" class="book_title"><p>Buchtitel</p></div>
+      <div id="book-cover" class="book_cover">
+        <img src="./assets/img/book.png" alt="" />
+      </div>
+      <div class="price_and_likes">
+        <p id="price">19,90</p>
+        <div class="likes_and_heart">
+          <p id="likes">1234</p>
+          <img src="./assets/img/heart.png" alt="" />
+        </div>
+      </div>
+
+      <div id="book-infos" class="book_infos">
+        <div class="book_info_left">
+          <p>Autor:</p>
+          <p>Erscheinungsjahr:</p>
+          <p>Genre:</p>
+        </div>
+        <div class="book_info_right">
+          <p>Peter Lustig</p>
+          <p>1969</p>
+          <p>Roman</p>
+        </div>
+      </div>
+      <div id="book-commentarie-headline" class="book_commentaries_headline">
+        <p>Kommentare</p>
+      </div>
+      <div id="commentaries-container" class="commentaries_container">
+        <div id="commentaries-user-names" class="commentaries_user_names"></div>
+        <div
+          id="commentaries-user-commentaries"
+          class="commentaries_user_commentaries"
+        ></div>
+      </div>
+      <div id="commentarie-input" class="commentarie_input">
+        <input type="text" />
+        <button id="send-button" class="send_button"></button>
+      </div>
+    </section>
+    <!-- <section id="content-container2"></section>
     <section id="content-container3"></section>
     <section id="content-container4"></section>
     <section id="content-container5"></section>
-    <section id="content-container6"></section>
+    <section id="content-container6"></section> -->
     <footer></footer>
   </body>
 </html>

@@ -6,9 +6,34 @@
 
 html,
 body {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #3700ff;
+  z-index: 1000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #3700ff;
+  z-index: 1000;
 }
