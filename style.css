@@ -3,14 +3,13 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 255, 0.534);
+  background-color: rgba(70, 72, 4, 0.534);
   height: 600px;
-  width: 400px;
+  width: clamp(260px, 40vw, 700px);
   border-radius: 12px;
 }
 
 .book_title {
-  background-color: rgba(15, 15, 48, 0.733);
   height: 70px;
   width: 100%;
   display: flex;
@@ -27,7 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(70, 70, 120, 0.623);
   height: 120px;
   width: 100%;
 }
@@ -38,7 +36,6 @@
 }
 
 .price_and_likes {
-  background-color: rgba(165, 42, 42, 0.404);
   height: 50px;
   width: 100%;
   display: flex;
@@ -70,7 +67,6 @@
 }
 
 .book_infos {
-  background-color: rgba(137, 43, 226, 0.459);
   display: flex;
   height: 100px;
   width: 100%;
@@ -89,7 +85,6 @@
 }
 
 .book_comment_headline {
-  background-color: rgba(128, 255, 0, 0.349);
   display: flex;
   align-items: center;
   height: 40px;
@@ -98,7 +93,6 @@
 }
 
 .comment_container {
-  background-color: rgba(255, 248, 220, 0.591);
   display: flex;
   height: 180px;
   width: 100%;
@@ -107,33 +101,49 @@
   flex-direction: row;
 }
 
-.comment_user_names {
-  background-color: rgba(0, 255, 255, 0.582);
+.comment_section_user_names {
   height: 100%;
   width: 50%;
 }
 
-.comment_user_comment {
-  background-color: rgba(195, 255, 0, 0.582);
-  height: 100%;
+.comment_section_user_comment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 95%;
   width: 50%;
+  overflow-y: auto;
+  background: transparent;
 }
 
 .comment_input {
-  background-color: rgba(255, 127, 80, 0.527);
   height: 40px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 15px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .comment_input input {
   height: 20px;
-  width: 330px;
+  width: 80%;
+  background-color: #646c19;
+  border: none;
 }
 
 .comment_input button {
-  height: 20px;
-  width: 25px;
+  height: 40px;
+  width: 17%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.send_button img {
+  height: 38px;
+  width: auto;
+  transform: rotate(26deg);
 }
