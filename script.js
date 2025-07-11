@@ -1,12 +1,19 @@
 // Content rendern
 function init() {
-  renderall();
+  renderAll();
 }
 
-function renderBook1() {
-  //   let bookRef = document.getElementById("content-container1");
-  //   bookRef.innerHTML = "";
-  for (let index = 0; index < books.name.length; index++) {
-    bookRef.innerHTML += getContent(index);
-  }
+// function renderAll() {
+//   renderContent1();
+//   renderContent2();
+// }
+
+function renderContent1() {
+  let ContentRef = document.getElementById("content-container1");
+  ContentRef.innerHTML = /*html*/ ``;
+}
+
+function renderContent2() {
+  let ContentRef = document.getElementById("content-container2");
+  ContentRef.innerHTML = /*html*/ ``;
 }

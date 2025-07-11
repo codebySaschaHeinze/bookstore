@@ -52,9 +52,19 @@
   gap: 10px;
 }
 
-.likes_and_heart img {
-  height: 15px;
+.likes_and_heart p {
+  margin-top: 7px;
+}
+
+.heart_button img {
+  height: 30px;
   width: auto;
+}
+
+.heart_button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .book_infos {
@@ -64,7 +74,16 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.book_info_left {
+}
+
+.book_info_right {
+  justify-items: flex-end;
 }
 
 .book_commentaries_headline {
