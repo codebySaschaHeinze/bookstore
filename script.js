@@ -1,10 +1,15 @@
+function init() {
+  getBooks();
+}
+
 // books in forSchleife
 
 function getBooks() {
   let bookRef = document.getElementById("content-container");
   bookRef.innerHTML = "";
-  for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {}
-  return indexBooks;
+  for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
+    bookRef.innerHTML += getBookTemplate(indexBooks);
+  }
 }
 
 // comments in forSchleife
@@ -19,7 +24,7 @@ function getComments() {
       indexComments++
     ) {}
   }
-  // return indexComments;
+  return indexComments;
 }
 
 // Titel aus Objekt bekommen.

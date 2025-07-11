@@ -15,65 +15,14 @@
     <script src="./scripts/bg.js" defer></script>
     <script src="./script.js" defer></script>
   </head>
-  <body>
+  <body onload="init()">
     <nav>
       <div class="nav_logo">
         <img src="./assets/img/logo_book_white.png" alt="" />
         <h1>Bookstore</h1>
       </div>
     </nav>
-    <section id="content-container1" class="content_container">
-      <div id="book-title" class="book_title">
-        <p></p>
-      </div>
-      <div class="section_divider"></div>
-      <div id="book-cover" class="book_cover">
-        <img src="./assets/img/book.png" alt="" />
-      </div>
-      <div class="section_divider"></div>
-      <div class="price_and_likes">
-        <p id="price">19,90</p>
-        <div class="likes_and_heart">
-          <p id="likes">1234</p>
-          <button id="heart-button" class="heart_button">
-            <img src="./assets/img/heart_green.png" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="section_divider"></div>
-      <div id="book-infos" class="book_infos">
-        <div class="book_info_left">
-          <p>Autor:</p>
-          <p>Veröffentlichung:</p>
-          <p>Genre:</p>
-        </div>
-        <div class="book_info_right">
-          <p>Peter Lustig</p>
-          <p>1969</p>
-          <p>Roman</p>
-        </div>
-      </div>
-      <div class="section_divider"></div>
-      <div id="book-comment-headline" class="book_comment_headline">
-        <p>Kommentare:</p>
-      </div>
-      <div id="comment-container" class="comment_container">
-        <div
-          id="comment-section-user-names"
-          class="comment_section_user_names"
-        ></div>
-        <div
-          id="comment-section-user-comment"
-          class="comment_section_user_comment"
-        ></div>
-      </div>
-      <div id="comment-input" class="comment_input">
-        <input type="text" />
-        <button id="send-button" class="send_button">
-          <img src="./assets/img/sendButton.png" alt="" />
-        </button>
-      </div>
-    </section>
+    <section id="content-container" class="content_container"></section>
     <!-- <section id="content-container2"></section>
     <section id="content-container3"></section>
     <section id="content-container4"></section>
