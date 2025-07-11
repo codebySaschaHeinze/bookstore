@@ -1,6 +1,6 @@
 const books = [
   {
-    name: "Steppenwolf",
+    title: "Steppenwolf",
     author: "Hermann Hesse",
     likes: 1350,
     liked: true,
@@ -19,7 +19,7 @@ const books = [
     ],
   },
   {
-    name: "Demian",
+    title: "Demian",
     author: "Hermann Hesse",
     likes: 1120,
     liked: true,
@@ -29,7 +29,7 @@ const books = [
     comments: [],
   },
   {
-    name: "Selbstbetrachtungen",
+    title: "Selbstbetrachtungen",
     author: "Marc Aurel",
     likes: 1520,
     liked: true,
@@ -48,7 +48,7 @@ const books = [
     ],
   },
   {
-    name: "Der Zauberberg",
+    title: "Der Zauberberg",
     author: "Thomas Mann",
     likes: 980,
     liked: false,
@@ -63,7 +63,7 @@ const books = [
     ],
   },
   {
-    name: "Bekenntnisse des Hochstaplers Felix Krull",
+    title: "Bekenntnisse des Hochstaplers Felix Krull",
     author: "Thomas Mann",
     likes: 870,
     liked: true,
@@ -73,7 +73,7 @@ const books = [
     comments: [],
   },
   {
-    name: "Mario und der Zauberer",
+    title: "Mario und der Zauberer",
     author: "Thomas Mann",
     likes: 920,
     liked: true,
@@ -88,7 +88,7 @@ const books = [
     ],
   },
   {
-    name: "Also sprach Zarathustra",
+    title: "Also sprach Zarathustra",
     author: "Friedrich Nietzsche",
     likes: 1450,
     liked: true,
@@ -107,7 +107,7 @@ const books = [
     ],
   },
   {
-    name: "West-östlicher Divan",
+    title: "West-östlicher Divan",
     author: "Johann Wolfgang von Goethe",
     likes: 1020,
     liked: false,

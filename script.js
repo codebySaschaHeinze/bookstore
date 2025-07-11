@@ -1,54 +1,29 @@
-// Content rendern
-// Preis für das Buch aus Array holen, dann in forSchleife packen, dann in innerHTML
-// *"Autor:", "Veröffentlichung:", "Genre:" aus dem Array holen, dann forSchleife, dann innerHTML
-// *Passende Elemente aus Array holen, dann forSchleife, dann innerHTML
-// Usernamen einfügen
-// User-Kommentare einfügen
-// Inputbox-Informationen in User-Kommentare packen
+// books in forSchleife
 
-function init() {
-  // renderAll();
-}
-
-function renderContent1() {
-  let ContentRef = document.getElementById("content-container1");
-  ContentRef.innerHTML = /*html*/ ``;
-}
-
-function renderBooks() {
-  let bookRef = document.getElementById("content-contaier1");
+function getBooks() {
+  let bookRef = document.getElementById("content-container");
   bookRef.innerHTML = "";
-  for (let i = 0; i < myBooks.length; i++) {}
+  for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {}
+  return indexBooks;
 }
 
-function renderComments() {
-  let commentsRef = document.getElementById("content-contaier1");
-  commentsRef.innerHTML = "";
-  for (let index = 0; index < comments.length; index++) {}
-}
-
-function saveBooksToLocalStorage() {
-  localStorage.setItem("books", JSON.stringify(books));
-}
-
-function getBooksFromLocalStorage() {
-  let myBooks = JSON.parse(localStorage.getItem("books"));
-  if (myBooks === null) {
-    saveBooksToLocalStorage();
-  } else {
-    allBooks = myBooks;
+// comments in forSchleife
+function getComments() {
+  let commentRef = document.getElementById("content-container");
+  commentRef.innerHTML = "";
+  for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
+    let book = books[indexBooks];
+    for (
+      let indexComments = 0;
+      indexComments < book.comments.length;
+      indexComments++
+    ) {}
   }
+  // return indexComments;
 }
 
-function saveCommentsToLocalStorage() {
-  localStorage.setItem("comments", JSON.stringify(comments));
-}
+// Titel aus Objekt bekommen.
 
-function getCommentsFromLocalStorage() {
-  let myComments = JSON.parse(localStorage.getItem("comments"));
-  if (myComments === null) {
-    saveCommentsToLocalStorage();
-  } else {
-    allComments = myComments;
-  }
-}
+// Titel in Template bringen.
+
+//von Input in Kommentare
