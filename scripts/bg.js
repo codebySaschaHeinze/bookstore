@@ -1,193 +1,124 @@
-let books = [
+const books = [
   {
-    name: "Die Geheimnisse des Ozeans",
-    author: "Clara Meer",
-    likes: 1250,
+    name: "Steppenwolf",
+    author: "Hermann Hesse",
+    likes: 1350,
     liked: true,
-    price: 19.99,
-    publishedYear: 2018,
-    genre: "Fantasy",
+    price: 12.99,
+    publishedYear: 1927,
+    genre: "Roman",
     comments: [
       {
-        name: "Leser123",
-        comment:
-          "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat.",
+        name: "LiteraturFan",
+        comment: "Ein tiefgründiger Roman über Zerrissenheit und Identität.",
       },
       {
-        name: "Bookworm84",
-        comment:
-          "Eine romantische Geschichte, die mein Herz berührt und mich zum Nachdenken gebracht hat.",
-      },
-      {
-        name: "FantasyFanatic",
-        comment:
-          "Eine spannende Fantasiewelt, die ich nur schwer aus der Hand legen konnte.",
-      },
-      {
-        name: "SciFiGuru",
-        comment:
-          "Ein cleverer Science-Fiction-Roman mit interessanten Zeitreise-Konzepten und Charakteren.",
-      },
-      {
-        name: "NovelLover",
-        comment:
-          "Ein Buch, das voller magischer Überraschungen steckt und mich begeistert hat.",
+        name: "HesseLover",
+        comment: "Brillant geschrieben, regt intensiv zum Nachdenken an.",
       },
     ],
   },
   {
-    name: "Der vergessene Pfad",
-    author: "Maximilian Schwarz",
-    likes: 980,
-    liked: false,
-    price: 14.5,
-    publishedYear: 2021,
-    genre: "Fantasy",
+    name: "Demian",
+    author: "Hermann Hesse",
+    likes: 1120,
+    liked: true,
+    price: 10.5,
+    publishedYear: 1919,
+    genre: "Roman",
     comments: [],
   },
   {
-    name: "Die Farben des Himmels",
-    author: "Laura Blau",
+    name: "Selbstbetrachtungen",
+    author: "Marc Aurel",
     likes: 1520,
     liked: true,
-    price: 22.95,
-    publishedYear: 2019,
-    genre: "Romantik",
+    price: 14.95,
+    publishedYear: 180,
+    genre: "Philosophie",
     comments: [
       {
-        name: "LeserPeter",
-        comment:
-          "Die Handlung war fesselnd und die Charaktere unglaublich lebendig dargestellt.",
+        name: "Stoiker123",
+        comment: "Zeitlose Weisheiten für Gelassenheit im Alltag.",
       },
       {
-        name: "BookLover21",
-        comment:
-          "Ein romantisches Meisterwerk, das mich tief berührt und bewegt hat.",
-      },
-      {
-        name: "FantasyNerd",
-        comment:
-          "Fantastische Welten und epische Abenteuer - genau mein Geschmack!",
-      },
-      {
-        name: "SciFiEnthusiast",
-        comment:
-          "Die Zeitreise-Elemente waren genial und haben die Story spannend gemacht.",
-      },
-      {
-        name: "ReadingAddict",
-        comment:
-          "Ein unvergessliches Buch, das mich auf eine magische Reise mitgenommen hat.",
+        name: "PhiloPeter",
+        comment: "Beeindruckend, wie aktuell seine Gedanken noch heute sind.",
       },
     ],
   },
   {
-    name: "Das Rätsel der Zeit",
-    author: "Alexander Weiss",
-    likes: 750,
+    name: "Der Zauberberg",
+    author: "Thomas Mann",
+    likes: 980,
     liked: false,
     price: 18.0,
-    publishedYear: 2020,
-    genre: "Science-Fiction",
+    publishedYear: 1924,
+    genre: "Roman",
     comments: [
       {
-        name: "BuchKenner",
-        comment:
-          "Ein spannendes Abenteuer, das mich von Anfang an mitgerissen hat.",
-      },
-      {
-        name: "LeseWurm",
-        comment:
-          "Die Liebesgeschichte war herzergreifend und wunderschön geschrieben.",
+        name: "ClassicReader",
+        comment: "Ein literarisches Monument, aber sehr anspruchsvoll.",
       },
     ],
   },
   {
-    name: "Der letzte Wächter",
-    author: "Sabine Grün",
-    likes: 1300,
+    name: "Bekenntnisse des Hochstaplers Felix Krull",
+    author: "Thomas Mann",
+    likes: 870,
     liked: true,
-    price: 16.75,
-    publishedYear: 2017,
-    genre: "Fantasy",
+    price: 13.75,
+    publishedYear: 1954,
+    genre: "Roman",
     comments: [],
   },
   {
-    name: "Im Schatten des Mondes",
-    author: "Philipp Silber",
-    likes: 890,
-    liked: false,
-    price: 12.3,
-    publishedYear: 2022,
-    genre: "Science-Fiction",
+    name: "Mario und der Zauberer",
+    author: "Thomas Mann",
+    likes: 920,
+    liked: true,
+    price: 9.99,
+    publishedYear: 1930,
+    genre: "Novelle",
     comments: [
       {
-        name: "BücherLiebhaber",
-        comment:
-          "Eine magische Reise durch eine faszinierende Fantasiewelt, absolut fesselnd.",
-      },
-      {
-        name: "Leseratte",
-        comment:
-          "Ein packender Science-Fiction-Roman, der mich zum Nachdenken gebracht hat.",
+        name: "NovellenFan",
+        comment: "Kurze, prägnante Gesellschaftskritik, großartig geschrieben.",
       },
     ],
   },
   {
-    name: "Jenseits der Sterne",
-    author: "Oliver Schwarz",
+    name: "Also sprach Zarathustra",
+    author: "Friedrich Nietzsche",
     likes: 1450,
     liked: true,
-    price: 21.0,
-    publishedYear: 2015,
-    genre: "Science-Fiction",
+    price: 11.0,
+    publishedYear: 1883,
+    genre: "Philosophie",
     comments: [
       {
-        name: "Leser123",
-        comment:
-          "Ein fesselndes Abenteuer, das mich von Anfang bis Ende mitgerissen hat.",
+        name: "NiedlicherNietzscheNerd",
+        comment: "Dichterisch, philosophisch, visionär - ein Meisterwerk.",
+      },
+      {
+        name: "Thinkerbell84",
+        comment: "Schwierig zu lesen, aber voller kraftvoller Gedanken.",
       },
     ],
   },
   {
-    name: "Das verborgene Königreich",
-    author: "Elena Gold",
-    likes: 920,
+    name: "West-östlicher Divan",
+    author: "Johann Wolfgang von Goethe",
+    likes: 1020,
     liked: false,
-    price: 17.5,
-    publishedYear: 2020,
-    genre: "Fantasy",
+    price: 12.5,
+    publishedYear: 1819,
+    genre: "Lyrik",
     comments: [
       {
-        name: "Bookworm92",
+        name: "LustigerLyrikLiebhaber",
         comment:
-          "Ein faszinierendes Buch, das mich von der ersten Seite an gefesselt hat.",
-      },
-    ],
-  },
-  {
-    name: "Liebe in Zeiten des Krieges",
-    author: "Emilia Rot",
-    likes: 1800,
-    liked: true,
-    price: 19.99,
-    publishedYear: 2016,
-    genre: "Romantik",
-    comments: [
-      {
-        name: "Bibliophile23",
-        comment:
-          "Die Fantasiewelt war so lebendig, ich konnte das Buch kaum aus der Hand legen.",
-      },
-      {
-        name: "StorySeeker",
-        comment:
-          "Eine unglaublich berührende Liebesgeschichte, die mich tief bewegt hat.",
-      },
-      {
-        name: "SciFiExplorer",
-        comment:
-          "Spannende Zukunftsvisionen und interessante Charaktere machten diesen Roman einzigartig.",
+          "Orientalische Motive mit westlichem Denken verwoben - einzigartig.",
       },
     ],
   },
