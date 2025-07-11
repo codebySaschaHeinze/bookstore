@@ -4,3 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+p {
+  color: rgba(177, 175, 168, 0.534);
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(193, 194, 196);
+}

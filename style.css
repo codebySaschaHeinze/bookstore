@@ -1,9 +1,23 @@
+.nav_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-left: 40px;
+}
+
+.nav_logo img {
+  height: 75px;
+  width: auto;
+  padding-bottom: 5px;
+}
+
 .content_container {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(70, 72, 4, 0.534);
+  background-color: rgba(88, 71, 6, 0.534);
   height: 600px;
   width: clamp(260px, 40vw, 700px);
   border-radius: 12px;
