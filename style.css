@@ -6,6 +6,7 @@
   background-color: rgba(0, 0, 255, 0.534);
   height: 600px;
   width: 400px;
+  border-radius: 12px;
 }
 
 .book_title {
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 .book_title p {
@@ -98,7 +100,7 @@
 .commentaries_container {
   background-color: rgba(255, 248, 220, 0.591);
   display: flex;
-  height: 170px;
+  height: 180px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -124,6 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 15px;
 }
 .commentarie_input input {
   height: 20px;
