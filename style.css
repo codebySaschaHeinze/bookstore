@@ -12,7 +12,7 @@
   padding-bottom: 5px;
 }
 
-.content_container {
+.book_wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
