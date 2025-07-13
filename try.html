@@ -1,25 +1,4 @@
-// function getContent(index) {
-//   let inputRef = document.getElementById("content-container");
-//   return /*html*/ `
-//         <div id="book-title" class="book_title"></div>
-//         <div id="book-cover" class="book_cover"></div>
-//         <div id="book-infos" class="book_infos"></div>
-//         <div id="book-commentaries" class="book_commentaries"></div>
-//         <div id="commentarie-input" class="commentarie_input">
-//         <input type="text" /></div>`;
-// }
-
-function getBookTemplate(indexBooks) {
-  let greenHeart = "";
-  let grayHeart = "";
-
-  if (books[indexBooks].liked === true) {
-    grayHeart = "d_none";
-  } else {
-    greenHeart = "d_none";
-  }
-
-  return `<div id="book-title" class="book_title">
+<div id="book-title" class="book_title">
         <p>${books[indexBooks].title}</p>
       </div>
       <div class="section_divider"></div>
@@ -31,9 +10,9 @@ function getBookTemplate(indexBooks) {
         <p class="price">${books[indexBooks].price}</p>
         <div class="likes_and_heart">
           <p class="likes">${books[indexBooks].likes}</p>
-          <button onclick="changeLiked(${indexBooks})" class="heart_button">
-            <img class="green_heart_img ${greenHeart}" id="green-heart-img${indexBooks}" src="./assets/img/heart_green.png" alt="" />
-            <img class="gray_heart_img ${grayHeart}" id="gray-heart-img${indexBooks}" src="./assets/img/heart_gray.png" alt="">
+          <button onclick="changeLiked(indexBooks)" class="heart_button">
+            <img class="green_heart_img" id="green-heart-img-${indexBooks}" src="./assets/img/heart_green.png" alt="" />
+            <img class="gray_heart_img d_none" id="gray-heart-img-${indexBooks}" src="./assets/img/heart_gray.png" alt="">
           </button>
         </div>
       </div>
@@ -63,5 +42,4 @@ function getBookTemplate(indexBooks) {
         <button class="send_button">
           <img src="./assets/img/sendButton.png" alt="" />
         </button>
-      </div>`;
-}
+      </div>
