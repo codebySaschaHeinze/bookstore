@@ -5,26 +5,29 @@ function init() {
 
 // books in forSchleife (indexBooks beinhaltet alle Informationen von books (bg.js))
 function getBooks() {
+  // bookRef weiß, wo es stattfindet
   let bookRef = document.getElementById("content-container");
+  // entsprechenden Container leeren
   bookRef.innerHTML = "";
+  // forSchleife für indexBooks (Informationssammlung)
   for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
+    // bookRef mit Verweis wohin genau, nimmt die getBookTemplate(indexBooks) mitsamt dem indexBooks
     bookRef.innerHTML += getBookTemplate(indexBooks);
-  }
-}
-
-// comments in forSchleife (weil die zwar in books sind, aber in extra Arrays)
-function getComments() {
-  let commentRef = document.getElementById("content-container");
-  commentRef.innerHTML = "";
-  for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
-    let book = books[indexBooks];
+    // neue Variable, weil neuer Ausgabeort (zweimal)
+    let commentNameRef = document.getElementById("comment-names" + indexBooks);
+    let commentTextRef = document.getElementById("comment-texts" + indexBooks);
+    // Innerhalb des books-Objekts stecken Arrays, die dann auch innerhalb der forSchleife gezählt werden müssen (Außerhalb sind die Information nicht zugänglich)
     for (
       let indexComments = 0;
-      indexComments < book.comments.length;
+      indexComments < books[indexBooks].comments.length;
       indexComments++
-    ) {}
+    ) {
+      // in commentsAndNames stecken die Informationen des Objekts und der Arrays innerhalb des Objekts
+      let commentsAndNames = books[indexBooks].comments[indexComments];
+      commentNameRef.innerHTML += `<p class="user_name">${commentsAndNames.name}</p>`;
+      commentTextRef.innerHTML += `<p class="user_comment">${commentsAndNames.comment}</p>`;
+    }
   }
-  // return indexComments;
 }
 
 function changeLiked(indexBooks) {

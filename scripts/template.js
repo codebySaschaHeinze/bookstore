@@ -67,12 +67,10 @@ function getBookTemplate(indexBooks) {
   </div>
   <div class="comment_section_user_names">
     <p class="user_name" id="user-name">
-      ${books[indexBooks].comments[indexComments].name}
     </p>
   </div>
   <div class="comment_section_user_comment">
     <p class="user_comment" id="user-comment">
-      ${books[indexBooks].comments[indexComments].comments}
     </p>
   </div>
   <div class="comment_input">
