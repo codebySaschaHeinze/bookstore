@@ -17,7 +17,7 @@ function getComments() {
   let commentRef = document.getElementById("content-container");
   commentRef.innerHTML = "";
   for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
-    let book = books[indexBooks];
+    let book = book[indexBooks];
     for (
       let indexComments = 0;
       indexComments < book.comments.length;
@@ -27,8 +27,4 @@ function getComments() {
   return indexComments;
 }
 
-// Titel aus Objekt bekommen.
-
-// Titel in Template bringen.
-
-//von Input in Kommentare
+function changeLiked(indexBooks) {}

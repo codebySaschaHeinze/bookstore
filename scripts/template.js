@@ -22,7 +22,7 @@ function getBookTemplate(indexBooks) {
         <p class="price">${books[indexBooks].price}</p>
         <div class="likes_and_heart">
           <p class="likes">${books[indexBooks].likes}</p>
-          <button class="heart_button">
+          <button onclick="changeLiked(indexBooks)" class="heart_button">
             <img src="./assets/img/heart_green.png" alt="" />
           </button>
         </div>

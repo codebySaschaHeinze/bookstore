@@ -97,7 +97,7 @@ const books = [
     genre: "Philosophie",
     comments: [
       {
-        name: "NiedlicherNietzscheNerd",
+        name: "NietzscheNerd",
         comment: "Dichterisch, philosophisch, visionär - ein Meisterwerk.",
       },
       {
@@ -116,7 +116,7 @@ const books = [
     genre: "Lyrik",
     comments: [
       {
-        name: "LustigerLyrikLiebhaber",
+        name: "LyrikLiebhaber",
         comment:
           "Orientalische Motive mit westlichem Denken verwoben - einzigartig.",
       },
