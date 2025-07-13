@@ -17,10 +17,11 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(131, 108, 13, 0.534);
-  height: 600px;
-  width: clamp(260px, 60vw, 700px);
-  border-radius: 12px;
+  background-color: #530000b8;
+  height: 500px;
+  width: clamp(260px, 50vw, 700px);
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .book_title {
@@ -29,11 +30,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 15px;
 }
 
 .book_title p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .book_cover {
@@ -55,8 +57,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: clamp(20px, 10vw, 40px);
-  padding-right: clamp(20px, 10vw, 10px);
+  padding-left: clamp(5px, 3vw, 30px);
+  padding-right: clamp(5px, 3vw, 30px);
 }
 
 .likes_and_heart {
@@ -66,7 +68,7 @@
 }
 
 .likes_and_heart p {
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .heart_button img {
@@ -87,11 +89,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: clamp(5px, 3vw, 30px);
+  padding-right: clamp(5px, 3vw, 30px);
 }
 
 .book_info_left {
+  justify-content: flex-start;
 }
 
 .book_info_right {
@@ -103,31 +106,29 @@
   align-items: center;
   height: 40px;
   width: 100%;
-  padding-left: 20px;
+  padding-left: clamp(5px, 3vw, 30px);
+}
+
+.book_comment_headline p {
+  font-weight: bold;
 }
 
 .comment_container {
   display: flex;
   height: 180px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   flex-direction: row;
+  padding-left: clamp(5px, 3vw, 30px);
+  padding-right: clamp(5px, 3vw, 30px);
 }
 
-.comment_section_user_names {
-  height: 100%;
-  width: 50%;
+.comment_section_user_name {
+  vertical-align: top;
+  padding-right: 60px;
 }
 
-.comment_section_user_comment {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 95%;
-  width: 50%;
-  overflow-y: auto;
-  background: transparent;
+.comment_section_user_name p {
 }
 
 .comment_input {

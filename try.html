@@ -1,25 +1,4 @@
-// function getContent(index) {
-//   let inputRef = document.getElementById("content-container");
-//   return /*html*/ `
-//         <div id="book-title" class="book_title"></div>
-//         <div id="book-cover" class="book_cover"></div>
-//         <div id="book-infos" class="book_infos"></div>
-//         <div id="book-commentaries" class="book_commentaries"></div>
-//         <div id="commentarie-input" class="commentarie_input">
-//         <input type="text" /></div>`;
-// }
-
-function getBookTemplate(indexBooks) {
-  let greenHeart = "";
-  let grayHeart = "";
-
-  if (books[indexBooks].liked === true) {
-    grayHeart = "d_none";
-  } else {
-    greenHeart = "d_none";
-  }
-
-  return `<div class="book_wrapper">
+<div class="book_wrapper">
   <div id="book-title" class="book_title">
     <p>${books[indexBooks].title}</p>
   </div>
@@ -77,5 +56,3 @@ function getBookTemplate(indexBooks) {
     </button>
   </div>
 </div>
-`;
-}

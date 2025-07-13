@@ -13,9 +13,8 @@ function getBooks() {
   for (let indexBooks = 0; indexBooks < books.length; indexBooks++) {
     // bookRef mit Verweis wohin genau, nimmt die getBookTemplate(indexBooks) mitsamt dem indexBooks
     bookRef.innerHTML += getBookTemplate(indexBooks);
-    // neue Variable, weil neuer Ausgabeort (zweimal)
-    let commentNameRef = document.getElementById("comment-names" + indexBooks);
-    let commentTextRef = document.getElementById("comment-texts" + indexBooks);
+
+    let tableRef = document.getElementById("comment-table" + indexBooks);
     // Innerhalb des books-Objekts stecken Arrays, die dann auch innerhalb der forSchleife gezählt werden müssen (Außerhalb sind die Information nicht zugänglich)
     for (
       let indexComments = 0;
@@ -24,8 +23,11 @@ function getBooks() {
     ) {
       // in commentsAndNames stecken die Informationen des Objekts und der Arrays innerhalb des Objekts
       let commentsAndNames = books[indexBooks].comments[indexComments];
-      commentNameRef.innerHTML += `<p class="user_name">${commentsAndNames.name}</p>`;
-      commentTextRef.innerHTML += `<p class="user_comment">${commentsAndNames.comment}</p>`;
+      tableRef.innerHTML += `
+                              <tr> <td class="comment_section_user_name">${commentsAndNames.name}:</td>
+                                   <td class="comment_section_user_comment">${commentsAndNames.comment}</td>
+                              <tr>
+                            `;
     }
   }
 }
