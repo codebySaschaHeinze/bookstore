@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #530000b8;
-  height: 500px;
+  height: 600px;
   width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
   margin-bottom: 40px;
@@ -115,7 +115,7 @@
 
 .comment_container {
   display: flex;
-  height: 220px;
+  height: 270px;
   width: 100%;
   align-items: flex-start;
   flex-direction: row;

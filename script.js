@@ -1,6 +1,6 @@
 function init() {
+  getCommentsFromLocalStorage();
   getBooks();
-  // console.log(books);
 }
 
 // books in forSchleife (indexBooks beinhaltet alle Informationen von books (bg.js))
@@ -76,14 +76,22 @@ function minusALike(indexBooks) {
   likesRef.innerText = books[indexBooks].likes;
 }
 
-function getComment(indexBooks) {
+function addComment(indexBooks) {
   let input = document.getElementById(`comment-input${indexBooks}`);
   let commentText = input.value;
   books[indexBooks].comments.push({
     name: "Bücherwurm7",
     comment: commentText,
   });
+  localStorage.setItem("allBooks", JSON.stringify(books));
   let tbodyRef = document.getElementById(`comment-table${indexBooks}`);
   tbodyRef.innerHTML += /*html*/ `<tr><td>Bücherwurm7</td><td>${commentText}</td></tr>`;
   input.value = "";
+}
+
+function getCommentsFromLocalStorage() {
+  let storedBooks = localStorage.getItem("allBooks");
+  if (storedBooks) {
+    books = JSON.parse(storedBooks);
+  }
 }
