@@ -22,6 +22,7 @@
   width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
   margin-bottom: 40px;
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.7);
 }
 
 .book_title {
@@ -122,7 +123,7 @@
   overflow-x: hidden;
   padding-left: clamp(5px, 3vw, 30px);
   padding-right: clamp(5px, 3vw, 30px);
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
   scrollbar-width: thin;
   scrollbar-color: #888 transparent;
@@ -130,7 +131,7 @@
 
 .comment_section_user_name {
   vertical-align: top;
-  padding-right: 20px;
+  padding-right: 0px;
   font-weight: bold;
 }
 

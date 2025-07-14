@@ -2,8 +2,8 @@
   height: 0.5px;
   width: 96%;
   border-radius: 2px;
-  background-color: #190e04aa;
-  box-shadow: 0px 0px 3px 1px #190e04c8;
+  background-color: #00000058;
+  box-shadow: 0px 0px 4px 1px #0000005e;
 }
 
 .d_none {
@@ -27,5 +27,6 @@
 }
 
 .book_comment_headline p {
+  font-size: 1.2rem;
   font-weight: bold;
 }
