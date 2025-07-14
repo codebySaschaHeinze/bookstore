@@ -13,6 +13,7 @@
 .comment_container::-webkit-scrollbar {
   width: 6px;
 }
+
 .comment_container::-webkit-scrollbar-thumb {
   background-color: #888;
   border-radius: 10px;
@@ -33,8 +34,38 @@
 
 .comment_input button {
   height: 40px;
-  width: 8%;
+  width: 18%;
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.nav_logo img {
+  height: 50px;
+  width: auto;
+  padding-bottom: 5px;
+}
+
+.book_cover img {
+  height: 100px;
+  width: auto;
+}
+
+.heart_button img {
+  height: 35px;
+  width: auto;
+}
+
+.heart_button img:hover {
+  transform: scale(1.05);
+}
+
+.send_button img {
+  height: 38px;
+  width: auto;
+  transform: rotate(26deg);
+}
+
+.send_button img:hover {
+  transform: scale(1.1);
 }
