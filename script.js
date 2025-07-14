@@ -75,3 +75,15 @@ function minusALike(indexBooks) {
   let likesRef = document.getElementById("likes" + indexBooks);
   likesRef.innerText = books[indexBooks].likes;
 }
+
+function getComment(indexBooks) {
+  let input = document.getElementById(`comment-input${indexBooks}`);
+  let commentText = input.value;
+  books[indexBooks].comments.push({
+    name: "Bücherwurm7",
+    comment: commentText,
+  });
+  let tbodyRef = document.getElementById(`comment-table${indexBooks}`);
+  tbodyRef.innerHTML += /*html*/ `<tr><td>Bücherwurm7</td><td>${commentText}</td></tr>`;
+  input.value = "";
+}

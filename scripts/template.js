@@ -71,8 +71,8 @@ function getBookTemplate(indexBooks) {
     </table>
   </div>
   <div class="comment_input">
-    <input type="text" />
-    <button class="send_button">
+    <input id="comment-input${indexBooks}" type="text" />
+    <button onclick="getComment(${indexBooks})" class="send_button">
       <img src="./assets/img/sendButton.png" alt="" />
     </button>
   </div>

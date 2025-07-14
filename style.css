@@ -147,6 +147,11 @@
   padding-right: 20px;
 }
 
+.comment_table td:first-child {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
 .comment_input input {
   height: 20px;
   width: 85%;
@@ -170,6 +175,5 @@
 }
 
 .send_button img:hover {
-  transform: scale(1.05);
-  transform: rotate(-26deg);
+  transform: scale(1.1);
 }
