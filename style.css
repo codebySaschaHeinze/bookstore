@@ -145,6 +145,7 @@ td.comment_section_user_comment {
   word-break: break-word;
   overflow-wrap: anywhere;
   white-space: normal;
+  color: rgb(172, 171, 170);
 }
 
 .comment_table td {
@@ -163,7 +164,7 @@ td.comment_section_user_comment {
 }
 
 .comment_input input::placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 0.428);
 }
 
 .comment_input {

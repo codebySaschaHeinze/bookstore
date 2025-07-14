@@ -15,21 +15,32 @@
 }
 
 .comment_container::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #888888;
   border-radius: 10px;
 }
 
 .book_title p {
   font-size: 1.2rem;
+  color: rgb(255, 255, 255);
 }
 
 .likes_and_heart p {
   margin-top: 10px;
+  color: rgb(224, 224, 224);
+}
+
+.price_and_likes p {
+  color: rgb(224, 224, 224);
 }
 
 .book_comment_headline p {
   font-size: 1.2rem;
   font-weight: bold;
+  color: rgb(224, 224, 224);
+}
+
+.book_infos p {
+  color: rgb(224, 224, 224);
 }
 
 .comment_input button {
