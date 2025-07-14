@@ -16,6 +16,10 @@ const books = [
         name: "HesseLover",
         comment: "Brillant geschrieben, regt intensiv zum Nachdenken an.",
       },
+      {
+        name: "GedankenWandler",
+        comment: "Hat mich emotional und philosophisch sehr bewegt.",
+      },
     ],
   },
   {
@@ -26,7 +30,12 @@ const books = [
     price: 10.99,
     publishedYear: 1919,
     genre: "Roman",
-    comments: [],
+    comments: [
+      {
+        name: "Suchender",
+        comment: "Eine Reise zur Selbstfindung, die mich nicht loslässt.",
+      },
+    ],
   },
   {
     title: "Selbstbetrachtungen",
@@ -45,6 +54,10 @@ const books = [
         name: "PhiloPeter",
         comment: "Beeindruckend, wie aktuell seine Gedanken noch heute sind.",
       },
+      {
+        name: "MindfulMax",
+        comment: "Diese Gedanken geben mir jeden Tag Orientierung.",
+      },
     ],
   },
   {
@@ -60,6 +73,10 @@ const books = [
         name: "ClassicReader",
         comment: "Ein literarisches Monument, aber sehr anspruchsvoll.",
       },
+      {
+        name: "Denker77",
+        comment: "Ein Buch zum Verweilen – nichts für Ungeduldige.",
+      },
     ],
   },
   {
@@ -70,7 +87,12 @@ const books = [
     price: 13.99,
     publishedYear: 1954,
     genre: "Roman",
-    comments: [],
+    comments: [
+      {
+        name: "Maskenspieler",
+        comment: "Ein charmantes Spiel mit Identitäten und Täuschung.",
+      },
+    ],
   },
   {
     title: "Mario und der Zauberer",
@@ -84,6 +106,10 @@ const books = [
       {
         name: "NovellenFan",
         comment: "Kurze, prägnante Gesellschaftskritik, großartig geschrieben.",
+      },
+      {
+        name: "PolitikLeser",
+        comment: "Eine subtile Warnung vor totalitären Tendenzen.",
       },
     ],
   },
@@ -104,6 +130,11 @@ const books = [
         name: "Thinkerbell84",
         comment: "Schwierig zu lesen, aber voller kraftvoller Gedanken.",
       },
+      {
+        name: "LollipopPhilosoph",
+        comment:
+          "Provokant, tiefgründig, herausfordernd – wie Nietzsche selbst.",
+      },
     ],
   },
   {
@@ -119,6 +150,11 @@ const books = [
         name: "LyrikLiebhaber",
         comment:
           "Orientalische Motive mit westlichem Denken verwoben - einzigartig.",
+      },
+      {
+        name: "GoetheFan92",
+        comment:
+          "Ungewohnt, aber faszinierend anders als Goethes andere Werke.",
       },
     ],
   },

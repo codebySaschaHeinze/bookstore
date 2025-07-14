@@ -9,3 +9,23 @@
 .d_none {
   display: none;
 }
+
+.comment_container::-webkit-scrollbar {
+  width: 6px;
+}
+.comment_container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.book_title p {
+  font-size: 1.2rem;
+}
+
+.likes_and_heart p {
+  margin-top: 10px;
+}
+
+.book_comment_headline p {
+  font-weight: bold;
+}

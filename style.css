@@ -19,23 +19,18 @@
   flex-direction: column;
   background-color: #530000b8;
   height: 500px;
-  width: clamp(260px, 50vw, 700px);
+  width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
   margin-bottom: 40px;
 }
 
 .book_title {
-  height: 70px;
+  height: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 15px;
-}
-
-.book_title p {
-  font-size: 1.2rem;
 }
 
 .book_cover {
@@ -44,6 +39,8 @@
   align-items: center;
   height: 120px;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .book_cover img {
@@ -67,10 +64,6 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-}
-
-.likes_and_heart p {
-  margin-top: 10px;
 }
 
 .heart_button img {
@@ -97,6 +90,8 @@
   justify-content: space-between;
   padding-left: clamp(5px, 3vw, 30px);
   padding-right: clamp(5px, 3vw, 30px);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .book_info_left {
@@ -113,28 +108,30 @@
   height: 40px;
   width: 100%;
   padding-left: clamp(5px, 3vw, 30px);
-}
-
-.book_comment_headline p {
-  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .comment_container {
   display: flex;
-  height: 180px;
+  height: 220px;
   width: 100%;
   align-items: flex-start;
   flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-left: clamp(5px, 3vw, 30px);
   padding-right: clamp(5px, 3vw, 30px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
 }
 
 .comment_section_user_name {
   vertical-align: top;
-  padding-right: 60px;
-}
-
-.comment_section_user_name p {
+  padding-right: 20px;
+  font-weight: bold;
 }
 
 .comment_input {
@@ -148,6 +145,7 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .comment_input input {
   height: 20px;
   width: 85%;
