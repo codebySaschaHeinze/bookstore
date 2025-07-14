@@ -17,7 +17,7 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: #530000b8;
+  background-color: #53000090;
   height: 600px;
   width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
@@ -116,7 +116,7 @@
 .comment_container {
   display: flex;
   height: 270px;
-  width: 100%;
+  width: 97%;
   align-items: flex-start;
   flex-direction: row;
   overflow-y: auto;
@@ -127,12 +127,19 @@
   padding-bottom: 20px;
   scrollbar-width: thin;
   scrollbar-color: #888 transparent;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
 }
 
 .comment_section_user_name {
   vertical-align: top;
   padding-right: 0px;
   font-weight: bold;
+}
+
+.comment_table {
+  table-layout: fixed;
+  width: 100%;
 }
 
 .comment_input {
@@ -150,22 +157,37 @@
 .comment_table td:first-child {
   font-weight: bold;
   padding-right: 10px;
+  color: rgba(118, 118, 0, 0.723);
+}
+
+td.comment_section_user_comment {
+  max-width: 300px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.comment_table td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .comment_input input {
   height: 20px;
-  width: 85%;
+  width: 100%;
   background-color: #ad4444a4;
   border: none;
   border-radius: 4px;
 }
 
-.comment_input button {
-  height: 40px;
-  width: 17%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+.comment_input input::placeholder {
+  color: black;
+}
+
+.comment_input {
+  padding-top: 5px;
 }
 
 .send_button img {

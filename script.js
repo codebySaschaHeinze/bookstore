@@ -75,20 +75,27 @@ function minusALike(indexBooks) {
   let likesRef = document.getElementById("likes" + indexBooks);
   likesRef.innerText = books[indexBooks].likes;
 }
-
+// Kommentar von Inputfeld auslesen und einfügen
 function addComment(indexBooks) {
+  // input weiß wo es stattfindet
   let input = document.getElementById(`comment-input${indexBooks}`);
+  // .value weil es ein normaler Text ist
   let commentText = input.value;
+  // nach books[usw].usw wird name und comment gepusht (und entsprechend ersetzt)
   books[indexBooks].comments.push({
     name: "Bücherwurm7",
     comment: commentText,
   });
+  // Speicherung im localStorage (books-Objekt steckt im "allBooks")
   localStorage.setItem("allBooks", JSON.stringify(books));
+  // tbodyRef weiß wo es stattfindet
   let tbodyRef = document.getElementById(`comment-table${indexBooks}`);
+  // .innerHTML fügt (+=) hinzu
   tbodyRef.innerHTML += /*html*/ `<tr><td>Bücherwurm7</td><td>${commentText}</td></tr>`;
+  // leert das Inputfeld danach
   input.value = "";
 }
-
+//
 function getCommentsFromLocalStorage() {
   let storedBooks = localStorage.getItem("allBooks");
   if (storedBooks) {
