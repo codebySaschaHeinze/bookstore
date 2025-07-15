@@ -6,6 +6,35 @@
   padding-left: 10px;
 }
 
+.liked_books_container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00000044;
+  width: clamp(260px, 90vw, 500px);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 30px 3px #53000090;
+  color: #cd2222;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.books_i_like {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(224, 224, 224);
+  margin-bottom: 16px;
+}
+
 .book_wrapper {
   display: flex;
   justify-content: start;

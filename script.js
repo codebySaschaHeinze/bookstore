@@ -4,6 +4,7 @@ function init() {
   getAllFromLocalStorage();
   // dann rendern
   renderBooks();
+  showLikedBooks();
 }
 
 // books in forSchleife (indexBooks beinhaltet alle Informationen von books (bg.js))
@@ -48,7 +49,7 @@ function addComment(indexBooks) {
     comment: commentText,
   });
   // Speicherung im localStorage (books-Objekt steckt im "allBooks")
-  localStorage.setItem("allBooks", JSON.stringify(books));
+  saveAllToLocalStorage();
   // tbodyRef weiß wo es stattfindet
   let tbodyRef = document.getElementById(`comment-table${indexBooks}`);
   // .innerHTML fügt (+=) hinzu
@@ -65,6 +66,10 @@ function getAllFromLocalStorage() {
   }
 }
 
+function saveAllToLocalStorage() {
+  localStorage.setItem("allBooks", JSON.stringify(books));
+}
+
 function changeLiked(indexBooks) {
   // Entsprechender Funktionsaufruf, wenn true der Fall ist
   if (books[indexBooks].liked === true) {
@@ -79,7 +84,8 @@ function changeLiked(indexBooks) {
     plusALike(indexBooks);
     grayHeart(indexBooks);
   }
-  localStorage.setItem("allBooks", JSON.stringify(books));
+  saveAllToLocalStorage();
+  showLikedBooks();
 }
 
 // gibt das entsprechende Herz im html zurück
@@ -97,7 +103,7 @@ function greenHeart(indexBooks) {
   let gray = document.getElementById("gray-heart-img" + indexBooks);
   green.classList.add("d_none");
   gray.classList.remove("d_none");
-  localStorage.setItem("allBooks", JSON.stringify(books));
+  saveAllToLocalStorage();
 }
 
 // * (diese oder die obere)
@@ -106,7 +112,7 @@ function grayHeart(indexBooks) {
   let green = document.getElementById("green-heart-img" + indexBooks);
   gray.classList.add("d_none");
   green.classList.remove("d_none");
-  localStorage.setItem("allBooks", JSON.stringify(books));
+  saveAllToLocalStorage();
 }
 
 // Bei Aufruf wird im entsprechenden Index +1 gezählt
@@ -121,4 +127,19 @@ function minusALike(indexBooks) {
   books[indexBooks].likes -= 1;
   let likesRef = document.getElementById("likes" + indexBooks);
   likesRef.innerText = books[indexBooks].likes;
+}
+
+// gelikete Bücher anzeigen
+// erfassen, wenn Bücher geliket wurden
+// div für die Ausgabe erstellen (innerHTML)
+
+function showLikedBooks() {
+  let likedRef = document.getElementById("liked-books-container");
+  likedRef.innerHTML = "";
+
+  for (let i = 0; i < books.length; i++) {
+    if (books[i].liked === true) {
+      likedRef.innerHTML += /*html*/ `<p class="liked_books">${books[i].title}</p>`;
+    }
+  }
 }
