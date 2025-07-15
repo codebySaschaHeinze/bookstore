@@ -1,6 +1,6 @@
 .section_divider {
   height: 0.5px;
-  width: 96%;
+  width: 90%;
   border-radius: 2px;
   background-color: #00000058;
   box-shadow: 0px 0px 4px 1px #0000005e;
@@ -20,8 +20,9 @@
 }
 
 .book_title p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
 .likes_and_heart p {
@@ -58,8 +59,10 @@
 }
 
 .book_cover img {
-  height: 100px;
+  height: 200px;
   width: auto;
+  box-shadow: 0px 0px 30px 3px #271f00;
+  border-radius: 5px;
 }
 
 .heart_button img {

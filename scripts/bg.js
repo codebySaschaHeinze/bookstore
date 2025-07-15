@@ -21,6 +21,7 @@ let books = [
         comment: "Hat mich emotional und philosophisch sehr bewegt.",
       },
     ],
+    cover: "./assets/img/steppenwolf.png",
   },
   {
     title: "Demian",
@@ -36,6 +37,7 @@ let books = [
         comment: "Eine Reise zur Selbstfindung, die mich nicht loslässt.",
       },
     ],
+    cover: "./assets/img/demian.png",
   },
   {
     title: "Selbstbetrachtungen",
@@ -59,6 +61,7 @@ let books = [
         comment: "Diese Gedanken geben mir jeden Tag Orientierung.",
       },
     ],
+    cover: "./assets/img/selbstbetrachtungen.png",
   },
   {
     title: "Der Zauberberg",
@@ -78,6 +81,7 @@ let books = [
         comment: "Ein Buch zum Verweilen – nichts für Ungeduldige.",
       },
     ],
+    cover: "./assets/img/der_zauberberg.png",
   },
   {
     title: "Bekenntnisse des Hochstaplers Felix Krull",
@@ -93,6 +97,7 @@ let books = [
         comment: "Ein charmantes Spiel mit Identitäten und Täuschung.",
       },
     ],
+    cover: "./assets/img/felix_krull.png",
   },
   {
     title: "Mario und der Zauberer",
@@ -112,6 +117,7 @@ let books = [
         comment: "Eine subtile Warnung vor totalitären Tendenzen.",
       },
     ],
+    cover: "./assets/img/mario_und_der_zauberer.png",
   },
   {
     title: "Also sprach Zarathustra",
@@ -136,6 +142,7 @@ let books = [
           "Provokant, tiefgründig, herausfordernd – wie Nietzsche selbst.",
       },
     ],
+    cover: "./assets/img/also_sprach_zarathustra.png",
   },
   {
     title: "West-östlicher Divan",
@@ -157,5 +164,6 @@ let books = [
           "Ungewohnt, aber faszinierend anders als Goethes andere Werke.",
       },
     ],
+    cover: "./assets/img/west_oestlicher_divan.png",
   },
 ];

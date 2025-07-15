@@ -6,7 +6,7 @@ function getBookTemplate(indexBooks, greenHeart, grayHeart) {
             </div>
             <div class="section_divider"></div>
             <div class="book_cover">
-              <img src="./assets/img/book.png" alt="" />
+              <img src="${books[indexBooks].cover}" alt="" />
             </div>
             <div class="section_divider"></div>
             <div class="price_and_likes">
@@ -15,7 +15,9 @@ function getBookTemplate(indexBooks, greenHeart, grayHeart) {
                 .replace(".", ",")} €
               </p>
             <div class="likes_and_heart">
-              <p id="likes${indexBooks}" class="likes">${books[indexBooks].likes}
+              <p id="likes${indexBooks}" class="likes">${
+    books[indexBooks].likes
+  }
               </p>
               <button onclick="changeLiked(${indexBooks})" class="heart_button">
               <img
