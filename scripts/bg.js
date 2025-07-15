@@ -7,6 +7,7 @@ let books = [
     price: 12.99,
     publishedYear: 1927,
     genre: "Roman",
+    cover: "bookstore/assets/img/steppenwolf.png",
     comments: [
       {
         name: "LiteraturFan",
@@ -20,8 +21,7 @@ let books = [
         name: "GedankenWandler",
         comment: "Hat mich emotional und philosophisch sehr bewegt.",
       },
-    ],
-    cover: "./assets/img/steppenwolf.png",
+    ]
   },
   {
     title: "Demian",
@@ -31,13 +31,13 @@ let books = [
     price: 10.99,
     publishedYear: 1919,
     genre: "Roman",
+    cover: "bookstore/assets/img/demian.png",
     comments: [
       {
         name: "Suchender",
         comment: "Eine Reise zur Selbstfindung, die mich nicht loslässt.",
-      },
-    ],
-    cover: "./assets/img/demian.png",
+      }
+    ]
   },
   {
     title: "Selbstbetrachtungen",
@@ -47,6 +47,7 @@ let books = [
     price: 14.99,
     publishedYear: 180,
     genre: "Philosophie",
+    cover: "bookstore/assets/img/selbstbetrachtungen.png",
     comments: [
       {
         name: "Stoiker123",
@@ -59,9 +60,8 @@ let books = [
       {
         name: "MindfulMax",
         comment: "Diese Gedanken geben mir jeden Tag Orientierung.",
-      },
-    ],
-    cover: "./assets/img/selbstbetrachtungen.png",
+      }
+    ]
   },
   {
     title: "Der Zauberberg",
@@ -71,6 +71,7 @@ let books = [
     price: 18.99,
     publishedYear: 1924,
     genre: "Roman",
+    cover: "bookstore/assets/img/der_zauberberg.png",
     comments: [
       {
         name: "ClassicReader",
@@ -79,9 +80,8 @@ let books = [
       {
         name: "Denker77",
         comment: "Ein Buch zum Verweilen – nichts für Ungeduldige.",
-      },
-    ],
-    cover: "./assets/img/der_zauberberg.png",
+      }
+    ]
   },
   {
     title: "Bekenntnisse des Hochstaplers Felix Krull",
@@ -91,13 +91,13 @@ let books = [
     price: 13.99,
     publishedYear: 1954,
     genre: "Roman",
+    cover: "bookstore/assets/img/felix_krull.png",
     comments: [
       {
         name: "Maskenspieler",
         comment: "Ein charmantes Spiel mit Identitäten und Täuschung.",
-      },
-    ],
-    cover: "./assets/img/felix_krull.png",
+      }
+    ]
   },
   {
     title: "Mario und der Zauberer",
@@ -107,6 +107,7 @@ let books = [
     price: 9.99,
     publishedYear: 1930,
     genre: "Novelle",
+    cover: "bookstore/assets/img/mario_und_der_zauberer.png",
     comments: [
       {
         name: "NovellenFan",
@@ -115,9 +116,8 @@ let books = [
       {
         name: "PolitikLeser",
         comment: "Eine subtile Warnung vor totalitären Tendenzen.",
-      },
-    ],
-    cover: "./assets/img/mario_und_der_zauberer.png",
+      }
+    ]
   },
   {
     title: "Also sprach Zarathustra",
@@ -127,6 +127,7 @@ let books = [
     price: 11.99,
     publishedYear: 1883,
     genre: "Philosophie",
+    cover: "bookstore/assets/img/also_sprach_zarathustra.png",
     comments: [
       {
         name: "NietzscheNerd",
@@ -138,11 +139,9 @@ let books = [
       },
       {
         name: "LollipopPhilosoph",
-        comment:
-          "Provokant, tiefgründig, herausfordernd – wie Nietzsche selbst.",
-      },
-    ],
-    cover: "./assets/img/also_sprach_zarathustra.png",
+        comment: "Provokant, tiefgründig, herausfordernd – wie Nietzsche selbst.",
+      }
+    ]
   },
   {
     title: "West-östlicher Divan",
@@ -152,18 +151,16 @@ let books = [
     price: 12.99,
     publishedYear: 1819,
     genre: "Lyrik",
+    cover: "bookstore/assets/img/west_oestlicher_divan.png",
     comments: [
       {
         name: "LyrikLiebhaber",
-        comment:
-          "Orientalische Motive mit westlichem Denken verwoben - einzigartig.",
+        comment: "Orientalische Motive mit westlichem Denken verwoben - einzigartig.",
       },
       {
         name: "GoetheFan92",
-        comment:
-          "Ungewohnt, aber faszinierend anders als Goethes andere Werke.",
-      },
-    ],
-    cover: "./assets/img/west_oestlicher_divan.png",
-  },
+        comment: "Ungewohnt, aber faszinierend anders als Goethes andere Werke.",
+      }
+    ]
+  }
 ];
