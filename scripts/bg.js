@@ -7,7 +7,7 @@ let books = [
     price: 12.99,
     publishedYear: 1927,
     genre: "Roman",
-    cover: "assets/img/steppenwolf.png",
+    cover: "./assets/img/steppenwolf.png",
     comments: [
       {
         name: "LiteraturFan",
@@ -31,7 +31,7 @@ let books = [
     price: 10.99,
     publishedYear: 1919,
     genre: "Roman",
-    cover: "assets/img/demian.png",
+    cover: "./assets/img/demian.png",
     comments: [
       {
         name: "Suchender",
@@ -47,7 +47,7 @@ let books = [
     price: 14.99,
     publishedYear: 180,
     genre: "Philosophie",
-    cover: "assets/img/selbstbetrachtungen.png",
+    cover: "./assets/img/selbstbetrachtungen.png",
     comments: [
       {
         name: "Stoiker123",
@@ -71,7 +71,7 @@ let books = [
     price: 18.99,
     publishedYear: 1924,
     genre: "Roman",
-    cover: "assets/img/der_zauberberg.png",
+    cover: "./assets/img/der_zauberberg.png",
     comments: [
       {
         name: "ClassicReader",
@@ -91,7 +91,7 @@ let books = [
     price: 13.99,
     publishedYear: 1954,
     genre: "Roman",
-    cover: "assets/img/felix_krull.png",
+    cover: "./assets/img/felix_krull.png",
     comments: [
       {
         name: "Maskenspieler",
@@ -107,7 +107,7 @@ let books = [
     price: 9.99,
     publishedYear: 1930,
     genre: "Novelle",
-    cover: "assets/img/mario_und_der_zauberer.png",
+    cover: "./assets/img/mario_und_der_zauberer.png",
     comments: [
       {
         name: "NovellenFan",
@@ -127,7 +127,7 @@ let books = [
     price: 11.99,
     publishedYear: 1883,
     genre: "Philosophie",
-    cover: "assets/img/also_sprach_zarathustra.png",
+    cover: "./assets/img/also_sprach_zarathustra.png",
     comments: [
       {
         name: "NietzscheNerd",
@@ -151,7 +151,7 @@ let books = [
     price: 12.99,
     publishedYear: 1819,
     genre: "Lyrik",
-    cover: "assets/img/west_oestlicher_divan.png",
+    cover: "./assets/img/west_oestlicher_divan.png",
     comments: [
       {
         name: "LyrikLiebhaber",
