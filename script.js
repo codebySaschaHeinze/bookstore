@@ -31,11 +31,7 @@ function renderBooks() {
     ) {
       // in commentsAndNames stecken die Informationen des Objekts und der Arrays innerhalb des Objekts
       let commentsAndNames = books[indexBooks].comments[indexComments];
-      tableRef.innerHTML += `
-                              <tr> <td class="comment_section_user_name">${commentsAndNames.name}:</td>
-                                   <td class="comment_section_user_comment">${commentsAndNames.comment}</td>
-                              <tr>
-                            `;
+      tableRef.innerHTML += commentsAndNamesTemplate(commentsAndNames);
     }
   }
 }
@@ -60,6 +56,7 @@ function addComment(indexBooks) {
   // leert das Inputfeld danach
   input.value = "";
 }
+
 // Aufruf vom localStorage
 function getAllFromLocalStorage() {
   let storedBooks = localStorage.getItem("allBooks");

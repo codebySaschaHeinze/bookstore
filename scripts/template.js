@@ -15,9 +15,7 @@ function getBookTemplate(indexBooks, greenHeart, grayHeart) {
                 .replace(".", ",")} €
               </p>
             <div class="likes_and_heart">
-              <p id="likes${indexBooks}" class="likes">${
-    books[indexBooks].likes
-  }
+              <p id="likes${indexBooks}" class="likes">${books[indexBooks].likes}
               </p>
               <button onclick="changeLiked(${indexBooks})" class="heart_button">
               <img
@@ -64,5 +62,14 @@ function getBookTemplate(indexBooks, greenHeart, grayHeart) {
                   </button>
               </div>
             </div>
+          `;
+}
+
+function commentsAndNamesTemplate(commentsAndNames) {
+  return `
+            <tr> 
+              <td class="comment_section_user_name">${commentsAndNames.name}:</td>
+              <td class="comment_section_user_comment">${commentsAndNames.comment}</td>
+            </tr>
           `;
 }

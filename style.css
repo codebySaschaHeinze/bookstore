@@ -135,9 +135,9 @@
 }
 
 .comment_table td:first-child {
-  font-weight: bold;
+  font-weight: 500;
   padding-right: 10px;
-  color: rgb(214, 214, 116);
+  color: rgb(218, 218, 135);
 }
 
 td.comment_section_user_comment {
