@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+td:last-child {
+  color: rgb(174, 174, 172);
+}
+
 nav {
   display: flex;
   background-color: #530000;

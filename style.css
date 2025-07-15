@@ -137,7 +137,7 @@
 .comment_table td:first-child {
   font-weight: bold;
   padding-right: 10px;
-  color: rgba(118, 118, 0, 0.723);
+  color: rgb(214, 214, 116);
 }
 
 td.comment_section_user_comment {
