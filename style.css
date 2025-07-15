@@ -11,14 +11,14 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: #00000044;
+  background-color: #0000002f;
   width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
   margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 0px 0px 30px 3px #53000090;
-  color: #cd2222;
+  box-shadow: 0px 0px 30px 3px #353535;
+  color: #000000;
 }
 
 section {
@@ -40,8 +40,8 @@ section {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: #53000090;
-  height: 600px;
+  background: linear-gradient(to bottom, #530000, #1d0000);
+  height: auto;
   width: clamp(260px, 90vw, 500px);
   border-radius: 20px;
   margin-bottom: 40px;
@@ -49,7 +49,7 @@ section {
 }
 
 .book_title {
-  height: 160px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -124,7 +124,7 @@ section {
 
 .comment_container {
   display: flex;
-  height: 270px;
+  height: 300px;
   width: 97%;
   align-items: flex-start;
   flex-direction: row;
