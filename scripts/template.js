@@ -15,9 +15,7 @@ function getBookTemplate(indexBooks, greenHeart, grayHeart) {
                 .replace(".", ",")} €
               </p>
             <div class="likes_and_heart">
-              <p id="likes${indexBooks}" class="likes">${
-    books[indexBooks].likes
-  }
+              <p id="likes${indexBooks}" class="likes">${books[indexBooks].likes}
               </p>
               <button onclick="changeLiked(${indexBooks})" class="heart_button">
               <img
